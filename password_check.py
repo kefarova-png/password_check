@@ -1,9 +1,8 @@
 user_password = "Pass-123"
+entered_password = ""
 
-while True:
+while entered_password != user_password:
     entered_password = input("Введите пароль: ")
-    if entered_password == user_password:
-        print("Пароль верный! Доброго времени суток!")
-        break  # веденный пароль совпал с заданным в коде ранее, завершаем цикл
-    else:
+    if entered_password != user_password:
         print("Неверный пароль. Попробуйте еще раз.")
+print("Пароль верный! Доброго времени суток!")
